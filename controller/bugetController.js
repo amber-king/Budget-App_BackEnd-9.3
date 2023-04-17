@@ -15,7 +15,7 @@ transactions.get("/:index", (req, res) => {
   if (transactionsArray[index]) {
     res.json(transactionsArray[index]);
   } else {
-    res.status(404).json({ error: "Sorry, not found 😕" });
+    res.status(404).redirect("/transactions");
   }
 });
 
@@ -30,10 +30,10 @@ transactions.delete("/:index", (req, res) => {
   const { index } = req.params;
   if (transactionsArray[index]) {
     if (transactionsArray[index]) {
-      const deletedTransactions = transactionsArray.splice(index, 1); // returns deleted logs
+      const deletedTransactions = transactionsArray.splice(index, 1); // returns deleted transactions
       res.status(200).json(transactionsArray);
     } else {
-      res.status(404).json({ error: "Not Found" });
+      res.status(404).json(deletedTransactions);
     }
   }
 });

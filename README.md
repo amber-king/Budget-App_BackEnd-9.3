@@ -9,7 +9,7 @@ This is the Back-End code of the Budget App Project. The purpose of this applica
 💰 Allows user to view their total current balance
 
 ### Deployed Links
-⭐️ Back-end Deployed Through Netlify ➡️
+⭐️ Back-end Deployed Through render ➡️ https://buget-app-backend.onrender.com
 <br>
 <br>
 ⭐️ Front-end Deployed Through Netlify ➡️

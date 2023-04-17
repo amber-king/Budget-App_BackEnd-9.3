@@ -1,9 +1,13 @@
 // use env var to start my servver & other services
 
-require("dotenv").config();
-const app = require("./App");
-const port = process.env.PORT || 3333;
+// DEPENDENCIES
+const app = require(" ./app");
 
+// CONFIGURATION
+require("dotenv").config();
+const port = process.env.PORT;
+
+// LISTEN
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });

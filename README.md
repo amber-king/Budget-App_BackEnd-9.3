@@ -1,4 +1,4 @@
-## Budget-App_BackEnd-9.3
+## Budget-App_BackEnd-9.3 💰
 
 This is the Back-End code of the Budget App Project. The purpose of this application is to :
 

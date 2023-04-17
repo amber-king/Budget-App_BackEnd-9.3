@@ -6,7 +6,7 @@ const transactionsArray = require("../models/transactions");
 
 const {transactionsValidator} = require("../models/validators")
 
-// GET -- all the buget transactions
+// GET -- all the budget transactions
 transactions.get("/", (req, res) => {
   res.json(transactionsArray);
 });
@@ -27,6 +27,19 @@ transactions.post("/", transactionsValidator, (req, res) => {
   res.send(transactionsArray);
 });
 
+// DELETE -- deletes the transactions from budget as user requested
+transactions.delete("/:index", (req, res) => {
+  const { index } = req.params;
+  if (transactionsArray[index]) {
+    if (transactionsArray[index]) {
+      const deletedTransactions = transactionsArray.splice(index, 1); // returns deleted transactions
+      res.status(200).json(transactionsArray);
+    } else {
+      res.status(404).json(deletedTransactions);
+    }
+  }
+});
+
 // PUT -- updates the transactions
 transactions.put("/:index", transactionsValidator, (req, res) => {
     const { index } = req.params;
@@ -40,17 +53,6 @@ transactions.put("/:index", transactionsValidator, (req, res) => {
 
 
 
-// DELETE -- deletes the transactions from budget as user requested
-transactions.delete("/:index", (req, res) => {
-  const { index } = req.params;
-  if (transactionsArray[index]) {
-    if (transactionsArray[index]) {
-      const deletedTransactions = transactionsArray.splice(index, 1); // returns deleted transactions
-      res.status(200).json(transactionsArray);
-    } else {
-      res.status(404).json(deletedTransactions);
-    }
-  }
-});
+
 
 module.exports = transactions;

@@ -1,7 +1,7 @@
 // use env var to start my servver & other services
 
 // DEPENDENCIES
-const app = require(" ./app");
+const app = require("./app");
 
 // CONFIGURATION
 require("dotenv").config();

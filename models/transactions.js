@@ -1,6 +1,6 @@
 module.exports = [
   {
-    id: "123",
+   
     item_name: "Income",
     amount: 250,
     date: "April 15, 2023",
@@ -8,7 +8,7 @@ module.exports = [
     catergory: "income",
   },
   {
-    id: "456",
+  
     item_name: "Phone Bill",
     amount: 300,
     date: "April 20, 2023",
@@ -16,7 +16,7 @@ module.exports = [
     catergory: "bill",
   },
   {
-    id: "789",
+    
     item_name: "Groceries",
     amount: 500,
     date: "March 30, 2023",

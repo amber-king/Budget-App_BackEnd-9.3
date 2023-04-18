@@ -17,7 +17,7 @@ transactions.get("/:index", (req, res) => {
   if (transactionsArray[index]) {
     res.json(transactionsArray[index]);
   } else {
-    res.status(404).redirect("/transactions");
+    res.status(404).json({ error: "Not found" });
   }
 });
 

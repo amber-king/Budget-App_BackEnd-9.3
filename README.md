@@ -1,6 +1,6 @@
 ## Budget-App_BackEnd-9.3 💰
 
-This is the Back-End code of the Budget App Project. The purpose of this application is to :
+This is the Back-End code of the Budget App Project where the object data array is used along with the Front-End code. The purpose of this application is to :
 
 💰 Allows user to view their budget 
 <br>

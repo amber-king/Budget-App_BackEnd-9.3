@@ -5,7 +5,7 @@ const express = require("express");
 const cors = require("cors")
 const app = express();
 
-const transactionController = require("./controller/bugetController")
+const transactionController = require("./controller/budgetController")
 
 // ROUTES
 app.use(express.json()) 
